@@ -40,7 +40,7 @@ It can also be provided with Enterprise-grade support from iXsystems.
 
 ## Nightly Development Featured Content
 
-<div class="toc_noprint">
+<div class="noprint">
 To view documentation for historical or the latest stable TrueNAS CORE major versions, use the **Version** dropdown at the top of this page.
 
 <div class="docs-sections">
