@@ -8,7 +8,7 @@ let loadMoreButton; // Cache reference to the load more button
 initPageFind();
 
 async function initPageFind() {
-    pagefind = await import("https://www.truenas.com/docs/pagefind/pagefind.js");
+    pagefind = await import("https://docs-dev.ixsystems.com/pagefind/pagefind.js");
     pagefind.init();
 
     if (query != null) {
@@ -58,6 +58,8 @@ async function displaySearchResults(query, page) {
                     : result.url.includes("/hardware/") ? `TrueNAS Systems:`
                     : result.url.includes("/contributing/") ? `Contributing:`
                     : result.url.includes("/references/") ? `References:`
+					: result.url.includes("core_websocket") ? `${coreIcon}\u00A0API:`
+					: result.url.includes("scale_websocket") ? `${scaleIcon}\u00A0API:`
                     : `${title}:`;
 
                 resultDiv.innerHTML = `
