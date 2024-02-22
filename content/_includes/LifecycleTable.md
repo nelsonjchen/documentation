@@ -1,6 +1,6 @@
 &NewLine;
 
-## TrueNAS Quality Lifecycle
+### TrueNAS Quality Lifecycle
 
 TrueNAS releases follow a general adoption guideline for their lifetime.
 Starting with the NIGHTLY builds, each stage of a major release incorporates more testing cycles and bug fixes that represent a maturation of the release.
