@@ -110,14 +110,14 @@ If you have not yet added a virtual machine to your system, click **Add Virtual 
 
    {{< trueimage src="/images/SCALE/Virtualization/AddVMNetwork.png" alt="Network Interface" id="Network Interface" >}}
 
-   Select the network interface type from the **Adapter Type** dropdown list. Select **Intel e82585 (e1000)** as it offers a higher level of compatibility with most operating systems, or select **VirtIO** if the guest operating system supports para-virtualized network drivers.
+   Select the network interface type from the **Adapter Type** dropdown list. Select **Intel e82585 (e1000)** as it offers a higher level of compatibility with most operating systems, or select **VirtIO** if the guest operating system supports para-virtualized network drivers.      
 
    Select the network interface card to use from the **Attach NIC** dropdown list.
    If the VM needs to access local NAS storage, attach a [network bridge](#accessing-truenas-storage-from-a-vm) interface.
 
    Click **Next**.
 
-6. Upload installation media for the operating system you selected.
+7. Upload installation media for the operating system you selected.
 
    {{< trueimage src="/images/SCALE/Virtualization/AddVMInstallMedia.png" alt="Installation Media" id="Installation Media" >}}
 
@@ -129,18 +129,16 @@ If you have not yet added a virtual machine to your system, click **Add Virtual 
 
    Click **Upload** to begin the upload process. After the upload finishes, click **Next**.
 
-7. Specify a GPU.
+8. Specify a GPU.
 
    {{< trueimage src="/images/SCALE/Virtualization/AddVMGPU.png" alt="GPU Screen" id="GPU Screen" >}}
-
-   The **VirtIO** network interface requires a guest OS that supports VirtIO para-virtualized network drivers.
 
    {{< hint type="note" title="Supported GPUs" >}}
     iXsystems does not have a list of approved GPUs at this time but TrueNAS does support various GPU from Nvidia, Intel, and AMD.
     As of 24.10, TrueNAS does not automatically install NVIDIA drivers. Instead, users must manually install drivers from the UI. For detailed instructions, see (https://www.truenas.com/docs/truenasapps/#installing-nvidia-drivers).
    {{< /hint >}}
 
-8. Confirm your VM settings, then click **Save**.
+9. Confirm your VM settings, then click **Save**.
 
 ### Adding and Removing Devices
 After creating the VM, you can add or remove virtual devices.
